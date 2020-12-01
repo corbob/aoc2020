@@ -4,7 +4,7 @@ def part1(input)
     for counter in 0..(input.count-1)
         for otherCounter in counter..(input.count-1)
             if (input[counter] + input[otherCounter]) == 2020
-                puts input[counter] *  input[otherCounter]
+                return input[counter] *  input[otherCounter]
             end
         end
     end
@@ -15,7 +15,7 @@ def part2(input)
             if (input[counter] + input[otherCounter]) < 2020
                 for anotherFuckingCounter in otherCounter..(input.count-1)
                     if (input[counter] + input[otherCounter] + input[anotherFuckingCounter]) == 2020
-                        puts input[counter] *  input[otherCounter] * input[anotherFuckingCounter]
+                        return input[counter] *  input[otherCounter] * input[anotherFuckingCounter]
                     end
                 end
             end
@@ -23,5 +23,5 @@ def part2(input)
     end
 end
 
-part1(input)
-part2(input)
+puts part1(input)
+puts part2(input)
