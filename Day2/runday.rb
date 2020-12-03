@@ -1,5 +1,5 @@
-inputFile = File.readlines("2.txt").map(&:chomp)
-# inputFile = File.readlines("2.sample.txt").map(&:chomp)
+inputFile = File.readlines("data.txt").map(&:chomp)
+# inputFile = File.readlines("sample.txt").map(&:chomp)
 def part1(input)
     totalValid = 0
     input.each do |line|
